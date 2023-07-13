@@ -62,3 +62,39 @@ section {
         object-fit: contain;
     }
 }
+
+footer {
+    background-image: url('/src/assets/img/footer-bg.jpg');
+    background-size: cover;
+
+    .footer-top {
+        width: $main-container;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+
+    h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: $main-txt;
+    }
+
+    li {
+        margin-bottom: 5px;
+        color: $links-cl;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .links ul {
+        list-style: none;
+    }
+
+    .col-1, .col-2, .col-3 {
+        margin-right: 20px;
+    }
+}
