@@ -1,3 +1,31 @@
 @use "partials/reset" as *;
 @use "partials/variables" as *;
 @use "partials/mixins" as *;
+
+header {
+    background-color: $header-bg;
+
+    .container {
+        max-width: $main-container;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        nav ul > * {
+            display: inline-block;
+        }
+    }    
+}
+
+
+main {
+    background-color: $main-gb;
+    color: $main-txt;
+
+    .container {
+        max-width: $main-container;
+        margin: auto;
+        padding: 50px 0;
+    }
+}
