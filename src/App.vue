@@ -22,16 +22,56 @@ export default {
 
       <nav>
         <ul>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
+          <li>
+            <a href="">
+              CHARACTERS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              COMICS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              MOVIES
+            </a>
+          </li>
+          <li>
+            <a href="">
+              TV
+            </a>
+          </li>
+          <li>
+            <a href="">
+              GAMES
+            </a>
+          </li>
+          <li>
+            <a href="">
+              COLLECTIBLES
+            </a>
+          </li>
+          <li>
+            <a href="">
+              VIDEOS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              FANS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              NEWS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              SHOP
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -199,16 +239,53 @@ export default {
           </ul>
         </div>
       </div>
-
       <div class="big-logo">
-        
       </div>
     </div>
-
-    <div class="footer-bottom">
-
-    </div>
   </footer>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="sign">
+        <a href="">
+          SIGN-UP NOW!
+        </a>
+      </div>
+
+      <div class="follow">
+        <h3>
+          FOLLOW US
+        </h3>
+        <ul>
+          <li>
+            <a href="">
+              <img src="../src/assets/img/footer-facebook.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../src/assets/img/footer-youtube.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../src/assets/img/footer-periscope.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../src/assets/img/footer-pinterest.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../src/assets/img/footer-twitter.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
