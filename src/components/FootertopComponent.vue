@@ -2,7 +2,53 @@
 export default {
     data() {
         return {
-
+          allLinks: [
+            {
+              title: 'DC comics',
+              links: [
+                'Characters',
+                'Comics',
+                'Movies',
+                'Tv',
+                'Games',
+                'Videos',
+                'News'
+              ]
+            },
+            {
+              title: 'Shop',
+              links: [
+                'Shop DC',
+                'Shop DC Collectibles'
+              ]
+            },
+            {
+              title: 'DC',
+              links: [
+                'Terms Of Use',
+                'Privacy policy(New)',
+                'Ad choices',
+                'Advertising',
+                'Jobs',
+                'Subscriptions',
+                'Talent Workshops',
+                'CPSC Certificates',
+                'Ratings',
+                'Shop Help',
+                'Contact Us'
+              ]
+            },
+            {
+              title: 'SITES',
+              links: [
+                'DC',
+                'MAD Magazine',
+                'DC Kids',
+                'DC Universe',
+                'DC Power Visa'
+              ]
+            }
+          ]
         }
     },
     methods: {
@@ -17,104 +63,39 @@ export default {
       <div class="links">
         <div class="col-1">
           <h3>
-            DC COMICS
+            {{ allLinks[0].title }}
           </h3>
           <ul>
-            <li>
-              <a href="">Characters</a>
-            </li>
-            <li>
-              <a href="">Comics</a>
-            </li>
-            <li>
-              <a href="">Movies</a>
-            </li>
-            <li>
-              <a href="">Tv</a>
-            </li>
-            <li>
-              <a href="">Games</a>
-            </li>
-            <li>
-              <a href="">Videos</a>
-            </li>
-            <li>
-              <a href="">News</a>
+            <li v-for="singleLink in allLinks[0].links" >
+              <a href="">{{ singleLink }}</a>
             </li>
           </ul>
           <h3>
-            SHOP
+            {{ allLinks[1].title }}
           </h3>
           <ul>
-            <li>
-              <a href="">Shop DC</a>
-            </li>
-            <li>
-              <a href="">Shop DC Collectibles</a>
+            <li v-for="singleLink in allLinks[1].links">
+              <a href="">{{ singleLink }}</a>
             </li>
           </ul>
         </div>
         <div class="col-2">
           <h3>
-            DC
+            {{ allLinks[2].title }}
           </h3>
           <ul>
-            <li>
-              <a href="">Terms Of Use</a>
-            </li>
-            <li>
-              <a href="">Privacy policy(New)</a>
-            </li>
-            <li>
-              <a href="">
-                Ad choices
-              </a>
-            </li>
-            <li>
-              <a href="">Advertising</a>
-            </li>
-            <li>
-              <a href="">Jobs</a>
-            </li>
-            <li>
-              <a href="">Subscriptions</a>
-            </li>
-            <li>
-              <a href="">Talent Workshops</a>
-            </li>
-            <li>
-              <a href="">CPSC Certificates</a>
-            </li>
-            <li>
-              <a href="">Ratings</a>
-            </li>
-            <li>
-              <a href="">Shop Help</a>
-            </li>
-            <li>
-              <a href="">Contact Us</a>
+            <li v-for="singleLink in allLinks[2].links">
+              <a href="">{{ singleLink }}</a>
             </li>
           </ul>
         </div>
         <div class="col-3">
           <h3>
-            SITES
+            {{ allLinks[3].title }}
           </h3>
           <ul>
-            <li>
-              <a href="">DC</a>
-            </li>
-            <li>
-              <a href="">MAD Magazine</a>
-            </li>
-            <li>
-              <a href="">DC Kids</a>
-            </li>
-            <li>
-              <a href="">DC Universe</a>
-            </li>
-            <li>
-              <a href="">DC Power Visa</a>
+            <li v-for="singleLink in allLinks[3].links">
+              <a href="">{{ singleLink }}</a>
             </li>
           </ul>
         </div>

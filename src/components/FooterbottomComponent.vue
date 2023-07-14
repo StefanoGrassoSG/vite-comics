@@ -2,11 +2,19 @@
 export default {
     data() {
         return {
-
+          icons: [
+            'img/footer-facebook.png',
+            'img/footer-youtube.png',
+            'img/footer-periscope.png',
+            'img/footer-pinterest.png',
+            'img/footer-twitter.png'
+          ]
         }
     },
     methods: {
-
+      getImagePath: function(img) {
+        return new URL(`../assets/${img}`, import.meta.url).href;
+      }
     }
 }
 </script>
@@ -25,29 +33,9 @@ export default {
           FOLLOW US
         </h3>
         <ul>
-          <li>
+          <li v-for="singleIcon in icons">
             <a href="">
-              <img src="../assets/img/footer-facebook.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../assets/img/footer-youtube.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../assets/img/footer-periscope.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../assets/img/footer-pinterest.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../assets/img/footer-twitter.png" alt="">
+              <img :src=getImagePath(singleIcon) alt="">
             </a>
           </li>
         </ul>
