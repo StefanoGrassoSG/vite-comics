@@ -1,5 +1,10 @@
 <script>
+import SingleProduct from './SingleProduct.vue';
+
 export default {
+    components: {
+      SingleProduct
+    },
     data() {
         return {
           cards: [
@@ -94,17 +99,8 @@ export default {
       </div>
       </div>
     <div class="container">
-      <div class="card" v-for="singleCard in cards" :key="singleCard">
-        <div class="img-card">
-          <img :src=singleCard.thumb alt="">
-        </div>
-        <div class="title-card">
-          {{ singleCard.series }}
-        </div>
-        <div class="price">
-          {{ singleCard.price }}
-        </div>
-      </div>
+      <SingleProduct class="card" v-for="singleCard in cards" :key="singleCard"
+      :productImage="singleCard.thumb" :productName="singleCard.series" :productPrice="singleCard.price"/>
     </div>
     <div class="button">
         <a href="#">
@@ -147,23 +143,6 @@ main {
           width: calc((100% / 6) - 30px);
           margin: 0 15px;
           margin-bottom: 20px;
-
-          .img-card {
-            display: inline-block;
-            width: 100%;
-            height: 80%;
-          }
-
-          .title-card {
-            padding: 5px 0;
-            text-transform: uppercase;
-          }
-
-          .img-card > img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
         }
     }
 
