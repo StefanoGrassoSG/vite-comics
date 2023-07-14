@@ -84,6 +84,7 @@ header {
             color: #1C1C1C;
             font-weight: bold;
             padding: 50px 10px;
+            transition: all 0.1s ease-in-out;
         }
 
         li > a:hover {
