@@ -4,6 +4,7 @@ import MainComponent from './components/MainComponent.vue';
 import ShopbarComponent from './components/ShopbarComponent.vue';
 import FootertopComponent from './components/FootertopComponent.vue';
 import FooterbottomComponent from './components/FooterbottomComponent.vue';
+import HeaderBottomComponent from './components/HeaderBottomComponent.vue';
 
 export default {
   data() {
@@ -19,7 +20,8 @@ export default {
     MainComponent,
     ShopbarComponent,
     FootertopComponent,
-    FooterbottomComponent
+    FooterbottomComponent,
+    HeaderBottomComponent
   }
 }
 </script>
@@ -27,6 +29,8 @@ export default {
 <template>
 
   <HeaderComponent />
+
+  <HeaderBottomComponent />
 
   <MainComponent />
 

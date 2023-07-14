@@ -86,6 +86,13 @@ export default {
 
 <template>
     <main>
+      <div class="series-container">
+        <div class="current">
+        <h3>
+          CURRENT SERIES
+        </h3>
+      </div>
+      </div>
     <div class="container">
       <div class="card" v-for="singleCard in cards" :key="singleCard">
         <div class="img-card">
@@ -115,6 +122,20 @@ main {
     background-color: $main-gb;
     color: $main-txt;
 
+    .series-container {
+      max-width: $main-container;
+      margin: auto;
+      position: relative;
+
+      .current {
+              width: 250px;
+              position: relative;
+              bottom: 20px;
+              background-color: $nav-bg;
+              padding: 10px 40px;
+              color: white;
+            }
+    }
     .container {
         max-width: $main-container;
         margin: auto;
