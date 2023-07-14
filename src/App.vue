@@ -32,13 +32,14 @@ export default {
 
   <ShopbarComponent />
 
-  <footer>
-    <FootertopComponent />
-    <FooterbottomComponent />
-  </footer>
+ 
+  <FootertopComponent />
+  <FooterbottomComponent />
+
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "assets/scss/main";
+@use "assets/scss/partials/reset";
 </style>

@@ -2,7 +2,38 @@
 export default {
     data() {
         return {
-
+          nav: [
+            {
+              link: 'CHARACTERS'
+            },
+            {
+              link: 'COMICS'
+            },
+            {
+              link: 'MOVIES'
+            },
+            {
+              link: 'TV'
+            },
+            {
+              link: 'GAMES'
+            },
+            {
+              link: 'COLLECTIBLES'
+            },
+            {
+              link: 'VIDEOS'
+            },
+            {
+              link: 'FANS'
+            },
+            {
+              link: 'NEWS'
+            },
+            {
+              link: 'SHOP'
+            }
+          ]
         }
     },
     methods: {
@@ -19,53 +50,8 @@ export default {
       <nav>
         <ul>
           <li>
-            <a href="">
-              CHARACTERS
-            </a>
-          </li>
-          <li>
-            <a href="">
-              COMICS
-            </a>
-          </li>
-          <li>
-            <a href="">
-              MOVIES
-            </a>
-          </li>
-          <li>
-            <a href="">
-              TV
-            </a>
-          </li>
-          <li>
-            <a href="">
-              GAMES
-            </a>
-          </li>
-          <li>
-            <a href="">
-              COLLECTIBLES
-            </a>
-          </li>
-          <li>
-            <a href="">
-              VIDEOS
-            </a>
-          </li>
-          <li>
-            <a href="">
-              FANS
-            </a>
-          </li>
-          <li>
-            <a href="">
-              NEWS
-            </a>
-          </li>
-          <li>
-            <a href="">
-              SHOP
+            <a href="" v-for="singleLink in nav">
+              {{ singleLink.link }}
             </a>
           </li>
         </ul>

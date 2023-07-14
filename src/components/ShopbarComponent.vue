@@ -2,11 +2,34 @@
 export default {
     data() {
         return {
-
+          links: [
+            {
+              name: 'DIGITAL COMICS',
+              img: "img/buy-comics-digital-comics.png"
+            },
+            {
+              name: 'DC MERCHANDISE',
+              img: "img/buy-comics-merchandise.png"
+            },
+            {
+              name: 'SUBSCRIPTION',
+              img: "img/buy-comics-subscriptions.png"
+            },
+            {
+              name: 'COMIC SHOP LOCATOR',
+              img: "img/buy-comics-shop-locator.png"
+            },
+            {
+              name: 'DC POWER VISA',
+              img: "img/buy-dc-power-visa.svg"
+            }
+          ]
         }
     },
     methods: {
-
+      getImagePath: function(img) {
+        return new URL(`../assets/${img}`, import.meta.url).href;
+      }
     }
 }
 </script>
@@ -15,44 +38,12 @@ export default {
     <section>
     <nav>
       <ul>
-        <li>
+        <li v-for="singleLink in links">
           <a href="">
             <div class="buy">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+              <img :src=getImagePath(singleLink.img) alt="">
             </div>
-            <span>DIGITAL COMICS</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="buy">
-              <img src="../assets/img/buy-comics-merchandise.png" alt="">
-            </div>
-            <span>DC MERCHANDISE</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="buy">
-              <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-            </div>
-            <span>SUBSCRIPTION</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="buy">
-              <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-            </div>
-            <span>COMIC SHOP LOCATOR</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="buy">
-              <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-            </div>
-            <span>DC POWER VISA</span>
+            <span>{{ singleLink.name }}</span>
           </a>
         </li>
       </ul>

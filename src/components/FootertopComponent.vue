@@ -12,6 +12,7 @@ export default {
 </script>
 
 <template>
+  <footer>
     <div class="footer-top">
       <div class="links">
         <div class="col-1">
@@ -121,12 +122,17 @@ export default {
       <div class="big-logo">
       </div>
     </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables.scss" as *;
 @use "../assets/scss/partials/reset.scss" as *;
 
+footer {
+    background-image: url('/src/assets/img/footer-bg.jpg');
+    background-size: cover;
+}
 .footer-top {
         width: $main-container;
         margin: auto;
