@@ -34,9 +34,9 @@ export default {
     object-fit: cover;
 }
 .title-card {
-            padding: 5px 0;
-            text-transform: uppercase;
-          }
+    padding: 5px 0;
+    text-transform: uppercase;
+}
 
 .img-card {
     display: inline-block;
